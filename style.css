@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.header-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; 
+}
+
+.left-col{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icons{
+    display: flex;
+    font-size: large;
+    align-items: center;
+    gap: 20px;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+}
+
+.section{
+    padding-top: 70px;
+}
+
+.banner-section img{
+    width:100%;
+}
+
+.banner-section{
+    position: relative;
+}
+
+.information{
+    position: absolute;
+    top: 40%;
+    left: 10%;   
+}
+
+.info-wrapper button{
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 21px;
+}
+
+.info_wrapper button{
+    font-size: 14px;
+    padding: 12px 20px;
+    border-radius: 21px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collections{
+    text-align: center;
+    font-size: 30px;
+    margin: 5px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: white !important;
+}
+
+.collection-grid-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+    gap: 2%;
+}
+
+.collection-list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.collection-list{
+    width: 23.5%;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f6f6f8;
+    padding: 4rem 1rem;
+}
+
+.footer-wrapper h3{
+    margin-top: 0;
+}
+
+.footer-wrapper svg,.footer-wrapper a,.footer-wrapper li,p{
+    color: #878787;
+    fill: #878787;
+    font-size: 14px;
+}
+
+.footer-wrapper a{
+    text-decoration: none;
+}
+
+.footer-wrapper li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.footer-wrapper ul{
+    padding-left: 0;
+}
+
+.footer-wrapper h3{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.email, .phone{
+    margin-bottom: 10px;
+}
+
+.payment-icons{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-wrapper{
+    row-gap: 10px;
+}
+
+.email-input{
+    position: relative;
+}
+.email-input input{
+    padding: 12px 35px;
+    border-radius: 22px;
+}
+.subscribe-button{
+    position: absolute;
+    top: 3.5px;
+    left: 138px;
+}
+
+.subscribe-button button{
+    padding: 10px;
+    border-radius: 20px;
+    font-size: small;
+    color: #fff;
+    background-color: #000;
+    border: #444;
+}
+
+.hamburger-icon{
+    cursor: pointer;
+}
+
+.nav-drawer{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    height: 100%;
+    width: 20%;
+    display: none;
+}
+
+.nav-drawer.active{
+    display: block !important;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    display: none;
+}
+.overlay.active{
+    display: block !important;
+    cursor: pointer;
+}
+
+.close svg{
+    width: 1.5rem;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.nav-wrapper details{
+    margin: 20px 10px;
+}
+
+.search-icon{
+    cursor: pointer;
+}
+
+.search-menu{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 11;
+    display: none;
+}
+
+.search-menu.active{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-menu-wrapper{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-menu-wrapper button{
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+}
+
+.search-menu-wrapper input{
+    width:50%;
+    border:none;
+    border-bottom:3px solid #000;
+    background-color: transparent;
+    padding:10px 5px;
+    font-size:10px;
+    outline:none; 
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .header-container {
+    padding: 20px 10px; 
+    }
+    
+    .logo svg{
+    width: 7rem;
+    }
+
+    .hamburger-icon svg{
+    width: 1.3rem;
+    }
+
+    .icons svg{
+    width: 1.3rem;
+    }
+    
+    .search-icon, .cart-icon{
+    display: none;
+    }
+
+    .logintext{
+    margin-right: 10px;
+    }
+
+    .info-wrapper h2{
+        font-size: 20px;
+        padding-bottom: 0;
+    }
+
+    .information p{
+        font-size: 18px;  
+        margin: 5px 0;  
+    }
+
+    .info-wrapper button{
+        background-color: transparent;
+        color: black;
+        border-color: black;
+    }
+
+    .collection-list{
+        width: 49%;
+    }
+
+    .footer-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .contact-info, .menu, .newsletter{
+        width: 100%;
+    }
+    .nav-drawer{
+        width: 100%;
+    }
+    .cust-care{
+    cursor: pointer;
+    }
+
+    .cust-ul ,.custm-content{
+        display: none;
+    }
+
+    .cust-ul.active, .custm-content.active{
+        display: block !important;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.9px) {
+    .info-wrapper h2{
+        font-size: 22px;
+        padding-bottom: 5px;
+    }
+
+    .information p{
+        font-size: 18px;  
+        margin: 10px 0;  
+    }
+
+    .info-wrapper button{
+        background-color: #c0d0d1;
+        color: white;
+        border-color: aliceblue;
+    }
+    
+    .collection-list{
+        width: 32%;
+    }
+
+    .footer-wrapper{
+        flex-wrap: wrap;
+    }
+
+    .contact-info, .menu, .newsletter{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .info-wrapper h2{
+        font-size: 30px;
+        padding-bottom: 10px;
+    }
+    .information p{
+        font-size: 18px;  
+        margin: 15px 0;  
+    }
+
+    .info-wrapper button{
+        background-color: rgb(28,107,114);
+        color: white;
+        border-color: aliceblue;
+    }
+
+    .contact-info, .newsletter{
+        width: 25%;
+    }
+
+    .menu{
+        width: 16.6%;
+    }
+      
+}
